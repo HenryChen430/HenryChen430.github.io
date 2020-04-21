@@ -3,12 +3,14 @@
 <head>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script> 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-  
+
   <script type="text/javascript">
     $(document).ready(function() {
+      $("#button").click(function(){
+        $("target1").effect("shake", {times: 5}, 1200);
+      });
+      
     $("#target1").css("color", "red");
-    $("#target1").prop("disabled", true);
-    $("#target4").remove();
     $("#target2").appendTo("#right-well");
     $("#target5").clone().appendTo("#left-well");
     $("#target1").parent().css("background-color", "red");
