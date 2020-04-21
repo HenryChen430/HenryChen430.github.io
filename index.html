@@ -15,17 +15,18 @@
     $("#id1").addClass("animated infinite bounce");
 
     $("#target1").css("color", "blue");
-    $("#target2").appendTo("#lower");
-    $("#target5").clone().appendTo("#upper");
+    $("#target2").appendTo("#right-well");
+    $("#target5").clone().appendTo("#left-well");
     $("#target1").parent().css("background-color", "blue");
-    $("#lower").children().css("color", "orange");
-    $("#upper").children().css("color", "green");
+    $("#right-well").children().css("color", "orange");
+    $("#left-well").children().css("color", "green");
     $(".target:nth-child(2)").addClass("animated bounce");
     $(".target:nth-child(odd)").addClass("animated shake");
     });
   </script>
 </head>
 <body>
+
 
 </p>
 
@@ -36,7 +37,7 @@
 
       <div class="col-xs-6">
         <h4>Theme 1</h4>
-        <div class="well" id="upper">
+        <div class="well" id="left-well">
           <button class="btn btn-default target" id="target1">volley</button>
           <button class="btn btn-default target" id="target2">volley</button>
           <button class="btn btn-default target" id="target3">volley</button>
@@ -44,7 +45,7 @@
       </div>
       <div class="col-xs-6">
         <h4>Theme 2</h4>
-        <div class="well" id="lower">
+        <div class="well" id="right-well">
           <button class="btn btn-default target" id="target4">volley</button>
           <button class="btn btn-default target" id="target5">volley</button>
           <button class="btn btn-default target" id="target6">volley</button>
